@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Speech.exe" version="1.0.0.6" publicKeyToken="cda435461cad9e21" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Speech" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Speech.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Параметры манифеста UAC
+          Если нужно изменить уровень контроля учетных записей Windows, замените 
+          узел requestedExecutionLevel одним из следующих значений.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+        Если нужно использовать виртуализацию файлов и реестра для обратной
+             совместимости, удалите узел requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>U5Q0jLohvkbWr6KAJ0S6RHeGTYoAQP16POzH2avlRTM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Flurl.dll" size="24064">
+      <assemblyIdentity name="Flurl" version="2.8.2.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>lFvt27ZFQk/zFa3w4CPY3RyS1JffavZrBtMAs4mWL3Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Flurl.Http.dll" size="68608">
+      <assemblyIdentity name="Flurl.Http" version="2.4.2.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>KnMDnw4SLtu57FVAmkdap62soAAs0SAxUU6GxRzYHrM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HtmlAgilityPack.dll" size="165376">
+      <assemblyIdentity name="HtmlAgilityPack" version="1.11.23.0" publicKeyToken="BD319B19EAF3B43A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HUtdWo1R9NZ7BQDIbleBX5xNRAvmONcs84JbDHLkQdc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="330752">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>u8IJDL7TbwokTnS/m/8eExVwwLQVhJsdyGUzNYP8VWM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.CognitiveServices.Speech.csharp.dll" size="148560">
+      <assemblyIdentity name="Microsoft.CognitiveServices.Speech.csharp" version="1.11.0.28" publicKeyToken="D2E6DCCCB609E663" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Eq3FNFEaOvmUBa8NkD6dFZc6+8tsY+zlJxiRxi5Q9pI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Extensions.DependencyInjection.dll" size="60408">
+      <assemblyIdentity name="Microsoft.Extensions.DependencyInjection" version="2.1.0.0" publicKeyToken="ADB9793829DDAE60" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ERI+vIDTbFW5VU3ZCJuxvzUN03FPcOiS858uCJSgrWM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Extensions.DependencyInjection.Abstractions.dll" size="36856">
+      <assemblyIdentity name="Microsoft.Extensions.DependencyInjection.Abstractions" version="2.1.0.0" publicKeyToken="ADB9793829DDAE60" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>F13VnG70Q8g1D1Nl2zrCYqL3IBbTjhq7MEU42su+CRg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Extensions.Logging.Abstractions.dll" size="47600">
+      <assemblyIdentity name="Microsoft.Extensions.Logging.Abstractions" version="2.1.0.0" publicKeyToken="ADB9793829DDAE60" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ESN3NehKFeeGo8uAfjaDll43GTfwK1PeXtzZW5b22ss=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Speech.dll" size="686888">
+      <assemblyIdentity name="Microsoft.Speech" version="11.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xRFA9oCPJDOycaPZVLWTxah/DFSr0AJNbju4A2dcs4s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="675752">
+      <assemblyIdentity name="Newtonsoft.Json" version="12.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NZjMytW1Nf6m+TZiEHpBg7/WFnvx0PgCYENgk+3C468=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Speech.exe" size="5918624">
+      <assemblyIdentity name="Speech" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>sMiyEqFR9ToUEFtAMA+AxWArS9I1IiinmhFObqrAfK8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VkNet.dll" size="1319424">
+      <assemblyIdentity name="VkNet" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>KTwguPue4O9bhZfsTs8ss/sLfMUhMkDnpuEdoIQLv0U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Sounds\durak.wav" size="1692732">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iIv3cnU53geihBZOEsuPegSsUiiJQLfl7vAQ87rFJ1I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\hoy.wav" size="240582">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bGBS8o3dXp4kaxPJeozCVBQhJC9o+MYfwAPs0KzDYug=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\music.wav" size="2096184">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KPzAuu0b3J0bwaoTcKQLsU5Svf7vAGdO+DYCkseeWZ4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\nu_ladno.wav" size="327758">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1BFs+x6+ebzd0VAgxhpKTbxFOsJDqRHv05VwqCveqhw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\svet.wav" size="1534830">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ax9kviRseurRvr7UMuVvFF5qiPI2ZjuEmAHH6vF/fZo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Speech.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=NEET\Admin" issuerKeyHash="93f3a330cfb7b8312a0dce7ae0480d89716ddbe1" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>zQA8jgyeUwZ8/j0W70ZiC37Tw+UagvTZs0yDgIdE47c=</DigestValue></Reference></SignedInfo><SignatureValue>OlFgvNj2BX8a3mQz3C7eeEyQeRBauyZ7O+XgOfmVONVTMsBG7OodIZRjMpP3cF2HiqATrDtk+f2LppYeCAc1D6qfivKNsYu8iykAZi/q5poXpOPBNgAw969NS10liyIkSD/VOWwOYw8qeU9gKqUt/aUYCU1IPwSq/quEazW8fPo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>66mEumBhVzOiywFeY2kKMwodNZXcK/bkUATCG0yqQ0pHLnUVZyynB8zaHOPKq9fbx3NEpu+1K7YZ/K6Ho62DtEM264iXUaKtxbfTV9Ty3P45oa7l/sXxu7oADKI3HeulIZcXPXFAYb6b74qlZujj5cw8vaZfPmli51jOKpjzotE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b7e3448780834cb3d9f4821ae5c3d37e0b6246ef163dfe7c06539e0c8e3c00cd" Description="" Url=""><as:assemblyIdentity name="Speech.exe" version="1.0.0.6" publicKeyToken="cda435461cad9e21" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=NEET\Admin</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>rf5O+fQGLpSUoFkQIelXQ5sGSfFvaEzuQTFJ+8To0iQ=</DigestValue></Reference></SignedInfo><SignatureValue>Z8A/q7DyBcSECwDmyMIlUXf9qahlWaOG6svNt0iNLuIGZErFXyb82q4TAn4eOs/T1Iy4B2f8Q07/lz88YphSi5kNcFwv9GuAduZTklhwmbE4BTjioe1VGdsjvqCkP+ufI8Z+Ae/A1HzK/rE04XlSjTALZrAnb/UNgAA6Y/vuGPY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>66mEumBhVzOiywFeY2kKMwodNZXcK/bkUATCG0yqQ0pHLnUVZyynB8zaHOPKq9fbx3NEpu+1K7YZ/K6Ho62DtEM264iXUaKtxbfTV9Ty3P45oa7l/sXxu7oADKI3HeulIZcXPXFAYb6b74qlZujj5cw8vaZfPmli51jOKpjzotE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQKCYx/DwTJ61Gq4ZAY0hJKzANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQATgBFAEUAVABcAEEAZABtAGkAbjAeFw0yMDA0MjYxNTExNTVaFw0yMTA0MjYyMTExNTVaMB8xHTAbBgNVBAMeFABOAEUARQBUAFwAQQBkAG0AaQBuMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDrqYS6YGFXM6LLAV5jaQozCh01ldwr9uRQBMIbTKpDSkcudRVnLKcHzNoc48qr19vHc0Sm77Urthn8roejrYO0QzbriJdRoq3Ft9NX1PLc/jmhruX+xfG7ugAMojcd66Uhlxc9cUBhvpvviqVm6OPlzDy9pl8+aWLnWM4qmPOi0QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBACCdYf6WCgUN2n4MNNqn7AU/IDCR9PySB6Ja7e5sBbNCEqiqd5+xOldoWRTwD75fzdKeiRSwJ0x1ImFD8/ZCPsyBjQdC148awpQhCy/g1gogjZORoL2ZSgq8ju/n5mTUTFd81yibkf0letS8YuHJaOhKUqw5YOi9/AS+BE4J6yu2</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
